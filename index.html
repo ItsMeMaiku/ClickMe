@@ -9,18 +9,23 @@
 			
 </head>
 <body>
-			<div id="appdemo1"></div>
-			<script type="text/javascript" src="js/script1.js"></script>
-			
-			<p id="display"> </p>
-<button onclick="Clickme()">Click Me</button>
+<p id="display"> </p>
 
 <script>
 var x=0;
 function  Clickme(){
 x=x+1;
-document.getElementById("display").innerHTML=x}
+
+if (x > 20) {
+    x=0;
+	alert("You exceed the number!");
+}
+document.getElementById("display").innerHTML=x
+}
 </script>
+
+<button onclick="Clickme()">Click Me</button>
+
 </body>
 </html>
 
